@@ -110,12 +110,12 @@ function Baby(name, age, toy) {
   this.favoriteToy = toy;
   console.log(this)  
 }
+Baby.prototype = Object.create(Person.prototype);
 Baby.prototype.play = function() {
   return `Playing with ${this.favoriteToy}`;
 }
-Baby.prototype.whine = function(){
-  return `This test is complete crap!`
-}
+
+
 /* 
   TASK 4
 
